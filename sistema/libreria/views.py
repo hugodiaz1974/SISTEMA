@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpRespond
+from django.http import HttpResponse
 
 def inicio(request):
     return HttpRespond("<h1>Bienvenido</h1>")
