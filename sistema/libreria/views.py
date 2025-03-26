@@ -6,3 +6,6 @@ def inicio(request):
 
 def nosotros(request):
     return render(request, 'paginas/nosotros.html')
+
+def index(request):
+    return render(request, 'libros/index.html')
