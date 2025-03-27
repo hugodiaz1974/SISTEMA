@@ -2,7 +2,7 @@
 FROM python:3.9-slim    
 
 # establece el directorio de trabajo en /app
-WORKDIR /appsistema
+WORKDIR /app
 
 # copia el archivo requirements.txt al contenedor en /app
 COPY requirements.txt requirements.txt
@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 5000
 
 # Comando para ejecutar la aplicación
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["python3", "sistema/manage.py", "runserver", "0.0.0.0:8000"]
